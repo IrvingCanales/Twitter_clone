@@ -4,14 +4,14 @@ import 'firebase/firestore';
 
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-    apiKey: "AIzaSyCEp48RCht0mOjrGaWDYuqp27XVx5Fcfus",
-    authDomain: "twitter-clone-a9dd9.firebaseapp.com",
-    databaseURL: "https://twitter-clone-a9dd9.firebaseio.com",
-    projectId: "twitter-clone-a9dd9",
-    storageBucket: "twitter-clone-a9dd9.appspot.com",
-    messagingSenderId: "868237803574",
-    appId: "1:868237803574:web:f69671a602245d8dd71897",
-    measurementId: "G-07R8SFX3XS"
+    apiKey: process.env.REACT_APP_APIKEY,
+    authDomain: process.env.REACT_APP_AUTHDOMAIN,
+    databaseURL: process.env.REACT_APP_DATABASEURL,
+    projectId: process.env.REACT_APP_PROJECTID,
+    storageBucket: process.env.REACT_APP_STOREBUCKET,
+    messagingSenderId: process.env.REACT_APP_MESSAGINSENDERID,
+    appId: process.env.REACT_APP_APPID,
+    measurementId: process.env.REACT_APP_MEASUREMENTID
   };
 
   const firebaseApp = firebase.initializeApp(firebaseConfig)
